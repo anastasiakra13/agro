@@ -1,0 +1,182 @@
+.pages
+    &-wrap 
+        .discover
+            display: flex
+            flex-direction: column
+            align-items: center
+            justify-content: space-between
+            margin-bottom: 133px
+            &-block
+                background: url("../img/baner2.jpg") no-repeat center
+                padding-left: 214px
+                margin-bottom: 217px
+                h4
+                    display: inline-block
+                    color: $text-color
+                    font-size: 40px
+                    line-height: 50px
+                    text-transform: uppercase 
+                    margin-top: 138px
+                    ins
+                        display: block
+                        color: $text-color
+                p
+                    display: inline-block
+                    align-items: center
+                    text-decoration: none
+                    color: $grey-color
+                    font-size: 14px 
+                    line-height: 23px
+                    margin-top: 20px     
+                    margin-bottom: 44px  
+                    margin-right: 856px               
+                button
+                    display: inline-block
+                    margin-bottom: 219px
+                    font-weight: bold
+                    font-size: 12px 
+                    text-transform: uppercase  
+                    padding: 21px 48px
+                    border: none
+                    border-radius: 25px 
+                    background-color: $hover-color 
+                    &:hover
+                        cursor: pointer
+                        background-color: $grey-color
+                    &:active
+                        background-color: $black-color
+                        color: $hover-color
+            &-gallery
+                margin-top: -329px
+                &-list
+                    display: flex
+                    align-items: start
+                    justify-content: center
+                    flex-wrap: wrap
+                    li
+                        background-color: $text-color
+                        width: 25%
+                        max-width: 290px
+                        span
+                            display: block
+                            color: $black-color
+                            font-size: 18px 
+                            line-height: 23px
+                            padding-top: 42px
+                            padding-left: 45px
+                        p
+                            display: block
+                            color: $grey-color
+                            font-size: 14px 
+                            line-height: 23px
+                            padding-top: 18px
+                            padding-left: 45px
+                            padding-right: 28px
+                        img
+                            width: 100%
+                            max-width: 290px
+        .block
+            background: url("../img/baner3.jpg") no-repeat                
+            h1
+                display: inline-block 
+                font-family: 'Shadows Into Light'
+                font-size: 230px
+                line-height: 180px
+                color: $taupe-color
+                margin-top: 128px  
+                padding-left: 227px
+                padding-bottom: 240px               
+                span
+                    display: block
+        .progress
+            margin-bottom: 126px
+            h4
+                color: $black-color
+                font-size: 40px
+                line-height: 50px
+                text-transform: uppercase 
+                text-align: center
+                margin-top: 99px
+                margin-bottom: 9px
+            p
+                display: block
+                color: $grey-color
+                font-size: 18px 
+                line-height: 25px
+                text-align: center
+                width: 564px 
+                margin: 0 auto
+                padding-top: 5px
+            &-list
+                display: flex
+                align-items: center
+                justify-content: space-between
+                li
+                    width: 24%
+                    margin-top: 69px
+                    img
+                        float: left
+                        margin-right: 30px
+                    h6
+                        color: $black-color
+                        font-size: 16px
+                        line-height: 50px
+                        span
+                            display: block
+                            font-size: 50px
+                            font-weight: bold
+
+@media screen and (max-width:  992px)
+    .pages
+        .discover
+            margin-bottom: 30px
+            &-block
+                padding-left: 90px
+                h4
+                    margin-top: 100px
+                p
+                    margin-right: 210px 
+                    font-size: 18px 
+                    line-height: 23px
+            &-gallery
+                margin-top: -329px
+                &-list
+                    li
+                        width: 50%
+                        max-width: 290px
+                        margin-ton: -4px
+                        span
+                            padding-top: 15px
+                            padding-left: 30px
+                            font-size: 24px 
+                            line-height: 24px
+                        p
+                            padding-left: 30px
+                            font-size: 20px 
+                            line-height: 23px
+        .block
+            background-position: 90% 0%
+            h1
+                margin-top: 570px  
+                padding-left: 150px
+                padding-bottom: 0px
+        .progress
+            margin-bottom: 60px
+            h4
+                margin-top: 70px
+
+@media screen and (max-width:  767px)
+    .pages
+        .progress
+            &-list
+                flex-wrap: wrap
+                justify-content: center
+                padding-left: 130px
+                li
+                    width: 49%
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+.about 
+    margin-bottom: 113px
+    &-wrap 
+    .photo
+        position: relative
+        margin-bottom: 145px
+        &-main
+            margin-top: 14px
+            margin-left: 1px
+        h3
+            display: inline-block
+            font-size: 100px
+            line-height: 100px
+            font-family: 'Shadows Into Light'
+            position: absolute
+            top: 74px
+            left: 621px
+            .yellow
+                color: $yellow-color
+            .pink
+                color: $pink-color
+            .green
+                color: $green-color
+            .orange
+                color: $orange-color
+            .blue
+                color: $blue-color
+    .servises
+        h4
+            color: $black-color
+            font-size: 40px
+            line-height: 50px
+            text-transform: uppercase 
+            margin-left: 370px
+            ins
+                color: $black-color
+                font-weight: bold
+        p
+            color: $grey-color
+            font-size: 18px
+            line-height: 25px
+            text-align: center
+            margin-top: 10px
+            margin-left: -20px
+        .icons
+            display: flex
+            justify-content: space-between
+            align-items: flex-start
+            margin-top: 93px           
+            li
+                width: 15%
+                margin-right: 46px
+                padding-bottom: 10px
+                text-align: center
+                img
+                    height: 56px
+                    padding-right: 10px
+                    margin-bottom: 8px
+                span
+                    display: block
+                    color: $black-color
+                    font-size: 16px
+                    line-height: 50px
+
+@media screen and (max-width:  992px)
+    .about 
+        margin-bottom: 25px
+        .photo
+            margin-bottom: 200px
+            h3
+                display: block
+                top: 380px
+                left: 60px
+        .servises
+            h4
+                margin: 0
+                text-align: center
+            .icons
+                margin-top: 45px  
+
+@media screen and (max-width:  767px)
+    .about
+        .photo
+            padding-left: 120px
+            &-main
+                width: 90%
+            h3
+                font-size: 90px
+                line-height: 95px
+                top: 270px
+                left: 125px
+        .servises
+            .icons
+                justify-content: space-around
+

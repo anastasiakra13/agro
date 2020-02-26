@@ -1,0 +1,112 @@
+.footer
+    background-color: $footer-color
+    &-wrap
+        display: flex
+        justify-content: space-between
+        margin: auto
+    &-info
+    &-navbar
+        display: flex
+        justify-content: space-between
+        margin-top: 77px
+        margin-left: 214px
+        img
+            width: 100px
+            height: 135px
+        &-menu
+            display: flex
+            flex-direction: column
+            a
+                color: $grey-color
+                font-size: 14px 
+                line-height: 30px 
+                &:hover
+                    color: $text-color
+                    border-bottom: 1px solid $hover-color              
+        &-links
+            display: flex
+            flex-direction: column
+            a
+                color: $grey-color
+                font-size: 14px 
+                line-height: 30px 
+    &-contacts-list
+        display: flex
+        justify-content: space-between
+        margin-left: 214px
+        margin-top: 52px
+        .email
+            margin-right: 41px
+            color: $hover-color
+            font-size: 12px 
+            line-height: 25px 
+            text-transform: uppercase
+            a
+                display: block
+                color: $text-color
+                font-size: 14px 
+                line-height: 30px
+                &:hover
+                    cursor: pointer
+                    color: $hover-color 
+                &:active
+                    color: $black-color
+        .phone
+            color: $hover-color
+            font-size: 12px 
+            line-height: 25px 
+            text-transform: uppercase
+            a
+                display: block
+                color: $text-color
+                font-size: 14px 
+                line-height: 30px
+                &:hover
+                    cursor: pointer
+                    color: $hover-color 
+                &:active
+                    color: $black-color
+        .social
+            margin-left: 101px
+            padding-top: 30px
+            a
+                padding-left: 10px
+    &-copyright
+        color: $grey-color
+        font-size: 13px 
+        line-height: 15px 
+        border-top: 1px solid $grey-color
+        margin-left: 214px
+        padding-top: 33px
+
+@media screen and (max-width:  992px)
+    .footer
+        &-wrap
+            flex-direction: column
+        &-navbar
+            margin-left: 75px
+            margin-right: 75px
+            &-links
+        &-contacts
+            &-list
+                margin-left: 75px
+                margin-right: 75px
+                .social
+                    margin-left: 150px
+        &-copyright
+            margin-left: 75px
+            margin-right: 75px
+        .google-map
+            margin: auto
+            padding-top: 15px
+
+@media screen and (max-width:  767px)
+    .footer
+        &-navbar
+        &-contacts
+            &-list
+                .social
+                    margin-left: 135px
+
+
+
