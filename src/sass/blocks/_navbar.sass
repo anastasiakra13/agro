@@ -5,8 +5,9 @@ header
             display: flex
             align-items: center
             justify-content: flex-start
-    .logo        
-    .navbar-menu
+    .burger
+        display: none        
+    .menu
         display: flex
         margin-left: 67px
         margin-bottom: 19px
@@ -144,10 +145,40 @@ header
             line-height: 30px
             text-transform: uppercase 
 
+@media screen and ( max-width:  1200px)
+    .header
+        .gallery
+            position: relative
+            margin-left: 100px
+            &-block1
+                margin-bottom: 418px
+            .item-4
+                display: none
+            .item-5
+                width: 500px
+                height: 370px
+            h3
+                display: block
+                position: absolute
+                top: 770px
+                left: 10px
+                color: $hover-color
+                font-size: 40px
+                line-height: 50px
+                text-transform: uppercase 
+                ins
+                    display: block
+                    font-weight: bold
+                .next
+                    display: block
+                    font-size: 40px
+                    line-height: 50px
+
+
 @media screen and (max-width:  992px)
     .header 
         background-position: 100% 0%
-        .navbar-menu
+        .menu
             margin-left: 35px
             li
                 a
@@ -188,21 +219,53 @@ header
 @media screen and (max-width:  767px)
     .header
         background-position: 100% 0%
-        .menu
+        .burger
             display: block
+            position: fixed
+            top: 0
+            cursor: pointer
             padding-left: 10px
+            z-index: 6
+            width: 100%
+            height: 120px
+            background-color: $black-color
             span
                 display: block
                 width: 60px
-                border-bottom: 8px solid $text-color
-                padding-bottom: 20px
+                border-bottom: 6px solid $text-color
+                padding-top: 22px
+                padding-bottom: 2px
                 &:hover
                     cursor: pointer
                     color: $hover-color
         .logo
             display: none
-        .navbar-menu
-            display: none
+        .menu
+            width: 100%
+            height: 100%
+            background: $black-color
+            flex-direction: column
+            margin-left: 0px
+            margin-top: 120px
+            margin-bottom: 19px
+            z-index: 5
+            li
+                padding-right: 5px
+                padding-top: 19px
+                padding-bottom: 19px
+                border-top: 1px solid $text-color
+                a
+                    text-decoration: none
+                    color: $text-color
+                    font-size: 30px 
+                    line-height: 80px
+                    margin-right: 50px
+                    padding-left: 70px
+                    &:hover
+                        cursor: pointer
+                        transition: .3s
+                        color: $hover-color
+                        border-bottom: 3px solid $hover-color
         .navbar-button
             display: none
         .gallery
@@ -211,5 +274,32 @@ header
                 max-width: 500px
             &-block2
                 margin-bottom: 20px
+
+@media screen and (max-width:  460px)
+    .header
+        .burger
+            display: block
+            height: 80px
+            span
+                width: 50px
+                border-bottom: 3px solid $text-color
+        .menu
+            display: none
+            margin-top: 80px
+            li
+                padding-right: 5px
+                padding-top: 19px
+                padding-bottom: 19px
+                border-top: 1px solid $text-color
+                a
+                    text-decoration: none
+                    color: $text-color
+                    font-size: 20px 
+                    line-height: 40px
+                    margin-right: 50px
+                    padding-left: 70px
+        .menu_open
+            display: inline-block
+            z-index: 6
 
 
